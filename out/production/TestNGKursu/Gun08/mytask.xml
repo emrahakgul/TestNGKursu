@@ -1,0 +1,26 @@
+
+<suite name="suit2" parallel="tests" thread-coun="2">
+    <test name="test1">
+
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="Gun08.myTask_dataprovider_withParalellbrowsers">
+                <methods>
+                    <include name="searchfunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="test2">
+
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="Gun08.myTask_dataprovider_withParalellbrowsers">
+                <methods>
+                    <include name="searchfunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
